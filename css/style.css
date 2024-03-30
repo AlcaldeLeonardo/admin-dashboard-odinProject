@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "aside header       header       header"
+        "aside mainDashBoard mainDashBoard mainDashBoard"
+        "aside mainDashBoard mainDashBoard mainDashBoard"
+        "aside mainDashBoard mainDashBoard mainDashBoard"
+        "aside mainDashBoard mainDashBoard mainDashBoard";
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #1992d4;
+    color: white;
+}
+.aside__logo{
+    font-size: 1.2rem;
+    padding: 1rem 1rem 1rem 0rem;
+    font-weight: bold;
+}
+.logo__svg{
+    width: 2.5rem;
+    margin: .5rem;
+    vertical-align: middle;
+}
+.item_icon{
+    width: 1rem;
+}
+.item_icon path{
+    fill: currentColor;
+}
+.header{
+    grid-area: header;
+    background-color: white;
+}
+.mainDashboard {
+    grid-area: mainDashBoard;
+    background-color: #E2E8F0;
+}
