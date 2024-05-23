@@ -169,8 +169,9 @@
     background-color:white;
     border-radius: 10px;
     padding: 1rem;
+    padding-bottom: 0;
     width: 48%;
-    height: 22vh;
+    height: 20vh;
     max-height: 250px;
     padding-left: 2rem;
     box-shadow: inset 10px 0px orange;
@@ -182,20 +183,20 @@
 
 .card__decription{
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: .8rem;
     color: rgb(82, 82, 82);
-    height: 80px;
+    height: 50%;
 }
 
 .card__buttonsBox{
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     display: flex;
     justify-content: end;
     align-items: end;
     gap: 10px;
 }
 .card__btn{
-    width: 30px;
+    width: 20px;
     align-items: end;
 }
 
