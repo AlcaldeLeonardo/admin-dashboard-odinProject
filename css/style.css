@@ -53,9 +53,9 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-template-areas:
-        "search search profileMin"
-        "profileFull profileFull postButtons"
-        "profileFull profileFull postButtons";
+    "search search profileMin"
+    "profileFull profileFull postButtons"
+    "profileFull profileFull postButtons";
     background-color: white;
     box-shadow: -2px 2px 10px 2px black;
     padding: 1.5rem 1rem;
@@ -135,7 +135,73 @@
     border-radius: 20px;
 }
 .mainDashboard {
-    box-shadow: 10px 10px 5px black;
     grid-area: mainMenu;
+    display: grid;
+
+    padding: 1rem;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "projects projects announcements"
+    "projects projects announcements"
+    "projects projects trending"
+    "projects projects trending";
+
     background-color: #e2e8f09d;
+    box-shadow: 10px 10px 5px black;
+}
+
+.title{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.mainDashboard__projetcs{
+    grid-area: projects;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.projects__projectCard{
+    background-color:white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 48%;
+    height: 22vh;
+    max-height: 250px;
+    padding-left: 2rem;
+    box-shadow: inset 10px 0px orange;
+}
+
+.card__title{
+    font-weight: bold;
+}
+
+.card__decription{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: rgb(82, 82, 82);
+    height: 80px;
+}
+
+.card__buttonsBox{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+}
+.card__btn{
+    width: 30px;
+    align-items: end;
+}
+
+.mainDashboard__announcements{
+    grid-area: announcements;
+}
+.mainDashboard__trending{
+    grid-area: trending;
 }
