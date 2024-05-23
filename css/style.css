@@ -3,7 +3,7 @@
 }
 
 
-.body {
+.cuerpo {
     font-family: "Roboto", sans-serif;
     height: 100vh;
     width: 100vw;
@@ -11,21 +11,25 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
-        "aside header       header       header"
-        "aside mainDashBoard mainDashBoard mainDashBoard"
-        "aside mainDashBoard mainDashBoard mainDashBoard"
-        "aside mainDashBoard mainDashBoard mainDashBoard"
-        "aside mainDashBoard mainDashBoard mainDashBoard";
+        "aside header   header   header"
+        "aside mainMenu mainMenu mainMenu"
+        "aside mainMenu mainMenu mainMenu"
+        "aside mainMenu mainMenu mainMenu"
+        "aside mainMenu mainMenu mainMenu";
 }
+
 
 .aside {
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     background-color: #1992d4;
     color: white;
 }
 .aside__logo{
     font-size: 1.2rem;
-    padding: 1rem 1rem 1rem 0rem;
+    padding: 1rem 1rem 0rem 0rem;
     font-weight: bold;
 }
 .logo__svg{
@@ -33,17 +37,46 @@
     margin: .5rem;
     vertical-align: middle;
 }
-.item_icon{
-    width: 1rem;
+.icon{
+    vertical-align: middle;
 }
-.item_icon path{
+.icon path{
     fill: currentColor;
+}
+.item__icon{
+    width: 1.5rem;
+    margin: .5rem 1rem;
 }
 .header{
     grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+        "search search profileMin"
+        "profileFull profileFull postButtons"
+        "profileFull profileFull postButtons";
     background-color: white;
 }
+.header__search{
+    grid-area: search;
+    padding: 1.5rem 0rem 0 1.2rem;
+    padding-left: 2rem;
+}
+.search__btn{
+    width: 2.5rem;
+    border: none;
+    background-color: #0000;
+}
+.seach__input{
+    width: 85%;
+    background-color: #E2E8F0;
+    outline: none;
+    border: none;
+    padding: .7rem;
+    border-radius: 20px;
+}
 .mainDashboard {
-    grid-area: mainDashBoard;
+    grid-area: mainMenu;
     background-color: #E2E8F0;
 }
