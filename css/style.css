@@ -149,12 +149,12 @@
     "projects projects trending";
 
     background-color: #e2e8f09d;
-    box-shadow: 10px 10px 5px black;
+    gap: 20px;
 }
 
 .title{
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin: .5rem 0;
 }
 
 .mainDashboard__projetcs{
@@ -177,14 +177,14 @@
     box-shadow: inset 10px 0px orange;
 }
 
-.card__title{
+.card__title, .detail__Name{
     font-weight: bold;
 }
 
 .card__decription{
     margin-top: 1rem;
     font-size: .8rem;
-    color: rgb(82, 82, 82);
+    color: #7B7B7B;
     height: 50%;
 }
 
@@ -203,6 +203,45 @@
 .mainDashboard__announcements{
     grid-area: announcements;
 }
+
+.announcementsCard, .trendingCard{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;;
+}
+
+.announcement__title{
+    font-size: .8rem;
+}
+
+.announcement__description{
+    font-size: .6rem;
+    color: #7B7B7B;
+}
+
+.separator{
+    height: 1px;
+    width: 100%;
+    margin: .5rem auto;
+    background-color: rgba(0, 0, 0, 0.226);
+}
 .mainDashboard__trending{
     grid-area: trending;
+}
+
+.trendingCard__user{
+    display: flex;
+    align-items: center;
+}
+.trendingProfileImage{
+    width: 30px;
+    margin: 0.7rem 1rem ;
+}
+.detail__app{
+    margin-top: .2rem;
+    color: #7B7B7B;
+}
+
+.card{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
 }
